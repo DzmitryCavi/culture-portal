@@ -57,7 +57,7 @@ export default function Navigation() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "About"].map((text, index) => (
+        {["Home", "About", "Styleguide","test"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               <InboxIcon />
