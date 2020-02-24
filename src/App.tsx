@@ -10,6 +10,7 @@ import { useTranslation, Trans } from 'react-i18next';
 
 import './App.sass';
 
+import Navigation from './components/navigation/navigation';
 import About from './containers/about/About';
 import Home from './containers/home/Home';
 
@@ -18,25 +19,14 @@ function App() {
   const changeLanguage = (lng: string): void => {
     i18n.changeLanguage(lng);
   };
-
-  const arr = [2, 3];
-
-  const b = arr[0];
   const k = '0';
   const name = 'Lutsenko';
   return (
     <div className="App">
       <Router>
+        <Navigation />
         <div>
           <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
             <button onClick={() => changeLanguage('ru')}>ru</button>
             <button onClick={() => changeLanguage('en')}>en</button>
             <button onClick={() => changeLanguage('by')}>by</button>
