@@ -1,8 +1,10 @@
 import React from 'react';
-import './Worklog.sass';
-
+import './work.sass';
 import { makeStyles } from '@material-ui/core/styles';
-import { TableHead, TableContainer, TableRow, Paper, TableCell, TableBody, Table,  } from '@material-ui/core';
+import { TableHead, TableContainer, TableRow,  TableCell, TableBody, Table } from '@material-ui/core';
+import {Typography, Paper, Box } from '@material-ui/core';
+import {Grid, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 const useStyles = makeStyles({
   table: {
@@ -26,27 +28,65 @@ export default function Worklog() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell align="right">Time spent</TableCell>
-            <TableCell align="right">Performed work</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map(row => (
-            <TableRow key={row.date}>
-              <TableCell component="th" scope="row">
-                {row.date}
-              </TableCell>
-              <TableCell align="right">{row.timeSpent}</TableCell>
-              <TableCell align="right">{row.performedWork}</TableCell>
+    <Box>
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label='simple table'>
+          <TableHead>
+            <TableRow>
+              <TableCell>Date</TableCell>
+              <TableCell align='center'>Time spent</TableCell>
+              <TableCell align='right'>Performed work</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+          </TableHead>
+          <TableBody>
+            {rows.map(row => (
+              <TableRow key={row.date}>
+                <TableCell component='th' scope='row'>
+                  {row.date}
+                </TableCell>
+                <TableCell align='center'>{row.timeSpent}</TableCell>
+                <TableCell align='right'>{row.performedWork}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <Box>
+        <Typography align='center' variant='h4'>
+          Main difficulties for the team during implementation:
+        </Typography>
+        <Grid>
+          <List>
+            <ListItem>
+              <ListItemIcon>
+                <FiberManualRecordIcon />
+              </ListItemIcon>
+              <ListItemText primary='Distribution of duties'/>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon>
+                <FiberManualRecordIcon />
+              </ListItemIcon>
+              <ListItemText primary='Searching time for team discussions'/>
+            </ListItem>
+          </List>
+        </Grid>
+      </Box>
+      <Box>
+      <Typography align='center' variant='h4'>
+          Self-evaluation
+        </Typography>
+        <List>
+          <Typography>
+            Min scope - 50
+          </Typography>
+          <ListItem>
+            <ListItemIcon>
+              <FiberManualRecordIcon />
+            </ListItemIcon>
+          </ListItem>
+        </List>
+      </Box>
+    </Box>
   );
 }
