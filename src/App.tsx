@@ -10,6 +10,7 @@ import './App.sass';
 
 import About from './containers/about/About';
 import Home from './containers/home/Home';
+import Worklog from './containers/worklog/Worklog';
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
               <li>
                 <Link to="/about">About</Link>
               </li>
+              <li>
+                <Link to="/worklog">Worklog</Link>
+              </li>
             </ul>
           </nav>
 
@@ -39,6 +43,9 @@ function App() {
           <Switch>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/worklog">
+              <Worklog />
             </Route>
             <Route path="/">
               <Home />
