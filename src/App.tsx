@@ -13,6 +13,7 @@ import './App.sass';
 import Navigation from './components/navigation/navigation';
 import About from './containers/about/About';
 import Home from './containers/home/Home';
+import Styleguide from './containers/styleguide/Styleguide';
 
 function App() {
   const { i18n } = useTranslation();
@@ -40,6 +41,9 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
+            <Route path="/styleguide">
+              <Styleguide />
+            </Route>
             <Route path="/about">
               <About />
             </Route>
