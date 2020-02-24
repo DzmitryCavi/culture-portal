@@ -6,19 +6,24 @@ import {
   Link
 } from "react-router-dom";
 
+import { useTranslation, Trans } from 'react-i18next';
+
 import './App.sass';
 
 import About from './containers/about/About';
 import Home from './containers/home/Home';
 
 function App() {
+  const { i18n } = useTranslation();
+  const changeLanguage = (lng: string): void => {
+    i18n.changeLanguage(lng);
+  };
 
-  let arr = [2, 3]
+  const arr = [2, 3];
 
-  let b = arr[0]
-
-  console.log("sfsdf")
-
+  const b = arr[0];
+  const k = '0';
+  const name = 'Lutsenko';
   return (
     <div className="App">
       <Router>
@@ -32,7 +37,15 @@ function App() {
                 <Link to="/about">About</Link>
               </li>
             </ul>
+            <button onClick={() => changeLanguage('ru')}>ru</button>
+            <button onClick={() => changeLanguage('en')}>en</button>
+            <button onClick={() => changeLanguage('by')}>by</button>
           </nav>
+          <div>
+            <Trans>
+              {name}.timeLine.{k}.text
+            </Trans>
+          </div>
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
