@@ -11,6 +11,7 @@ import {
     Divider, 
     ListItem, 
     ListItemIcon, 
+    ListItemText,
     FormControl,
     NativeSelect
 
@@ -58,6 +59,8 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+
+
 export default function Navigation() {
   const classes = useStyles();
   const [lang, setLang] = React.useState("");
@@ -90,12 +93,14 @@ export default function Navigation() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "About", "Styleguide","test"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              <InboxIcon />
-            </ListItemIcon>
-            <Link to={`/${text}`}>{text}</Link>
+        {["Home", "Authors", "Styleguide","test"].map((text, index) => (
+          <ListItem button key={text}>       
+            <Link to={`/${text}`}>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              {text}
+            </Link>
           </ListItem>
         ))}
       </List>
