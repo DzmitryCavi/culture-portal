@@ -12,7 +12,6 @@ import './App.sass';
 
 import About from './containers/about/About';
 import Home from './containers/home/Home';
-import Styleguide from './containers/styleguide/Styleguide';
 
 function App() {
   const { i18n } = useTranslation();
@@ -37,9 +36,6 @@ function App() {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="/styleguide">Styleguide</Link>
-              </li>
             </ul>
             <button onClick={() => changeLanguage('ru')}>ru</button>
             <button onClick={() => changeLanguage('en')}>en</button>
@@ -54,9 +50,6 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/styleguide">
-              <Styleguide />
-            </Route>
             <Route path="/about">
               <About />
             </Route>
