@@ -10,6 +10,7 @@ import './App.sass';
 import Navigation from './components/navigation/navigation';
 import Authors from './containers/authors/authors';
 import Home from './containers/home/Home';
+import Worklog from './containers/worklog/Worklog';
 import Test from './containers/test/test';
 import Styleguide from './containers/styleguide/Styleguide';
 
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/test">
               <Test />
+            </Route>
+            <Route path="/worklog">
+              <Worklog />
             </Route>
             <Route path="/">
               <Home />
