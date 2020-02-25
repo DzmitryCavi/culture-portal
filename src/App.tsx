@@ -13,6 +13,7 @@ import Home from './containers/home/Home';
 import Worklog from './containers/worklog/Worklog';
 import Test from './containers/test/test';
 import Styleguide from './containers/styleguide/Styleguide';
+import Team from './containers/team/Team';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/worklog">
               <Worklog />
+            </Route>
+            <Route path="/Team">
+              <Team />
             </Route>
             <Route path="/">
               <Home />

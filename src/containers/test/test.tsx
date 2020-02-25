@@ -19,6 +19,9 @@ function Test() {
             <Trans>
                 {name}.timeLine.{k}.text
             </Trans>
+            <Trans>
+                Button.Home
+            </Trans>
         </div>
     </div>
          
