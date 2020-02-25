@@ -2,47 +2,35 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import './App.sass';
 
-import About from './containers/about/About';
+import Navigation from './components/navigation/navigation';
+import Authors from './containers/authors/authors';
 import Home from './containers/home/Home';
 import Worklog from './containers/worklog/Worklog';
+import Test from './containers/test/test';
+import Styleguide from './containers/styleguide/Styleguide';
 
 function App() {
-
-  let arr = [2, 3]
-
-  let b = arr[0]
-
-  console.log("sfsdf")
-
   return (
     <div className="App">
       <Router>
+        <Navigation />
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/worklog">Worklog</Link>
-              </li>
-            </ul>
-          </nav>
-
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/styleguide">
+              <Styleguide />
+            </Route>
+            <Route path="/authors">
+              <Authors />
+            </Route>
+            <Route path="/test">
+              <Test />
             </Route>
             <Route path="/worklog">
               <Worklog />
