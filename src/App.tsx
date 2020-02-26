@@ -14,8 +14,10 @@ import Worklog from './containers/worklog/Worklog';
 import Test from './containers/test/test';
 import Styleguide from './containers/styleguide/Styleguide';
 import Team from './containers/team/Team';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { i18n } = useTranslation();
   return (
     <div className="App">
       <Router>
