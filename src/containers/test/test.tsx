@@ -13,18 +13,17 @@ function Test() {
         <nav>
             <button onClick={() => changeLanguage('ru')}>ru</button>
             <button onClick={() => changeLanguage('en')}>en</button>
-            <button onClick={() => changeLanguage('by')}>by</button>
+            <button onClick={() => changeLanguage('be')}>be</button>
         </nav>
         <div>
             <Trans>
-                {name}.timeLine.{k}.text
+                tr:{name}.timeLine.{k}.text
             </Trans>
             <Trans>
-                Button.Home
+                in:Home
             </Trans>
         </div>
     </div>
-         
   );
 }
 
