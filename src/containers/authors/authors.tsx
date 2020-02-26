@@ -7,7 +7,9 @@ import { TextField,
     CardContent,
     CardMedia,
     Button,
-    Typography
+    Typography,
+    Modal,
+    Fade,
  } from '@material-ui/core'
 
 
@@ -18,9 +20,26 @@ const useStyles = makeStyles({
     media: {
         height: 200
     },
+    modal: {
+      margin: 'auto',
+      width: '700px',
+      height: '600px',
+    },
 });
+
 function Authors() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+     setOpen(true);
+   };
+
+  const handleClose = () => {
+     setOpen(false);
+   };
+
   const classes = useStyles();
+
   return (
     <div>
         <span>Search</span>
@@ -47,6 +66,22 @@ function Authors() {
                 Learn More
                 </Button>
             </CardActions>
+
+            <Button variant="contained" color="secondary" onClick={handleOpen}>Watch the video</Button>
+             <Modal
+               className={classes.modal}
+               open={open}
+               onClose={handleClose}
+             >
+               <Fade in={open}>
+                 <CardMedia
+                    component="iframe"
+                    width="560"
+                    height="460"
+                    image="https://www.youtube.com/embed/6Lbi3ObnBng"
+                    title="Contemplative Reptile" />
+               </Fade>
+             </Modal>
         </Card>
     </div>
   );
