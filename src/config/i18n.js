@@ -23,7 +23,7 @@ const resources = {
     in: translationInterfaceRU,
     te: translationTeamRU,
   },
-  by: {
+  be: {
     tr: translationBY,
     in: translationInterfaceBY,
     te: translationTeamBY,
