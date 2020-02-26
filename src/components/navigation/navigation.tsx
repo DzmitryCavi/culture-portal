@@ -18,7 +18,9 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
-import { useTranslation } from 'react-i18next';
+
+import { useTranslation , Trans } from 'react-i18next';
+
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -100,13 +102,13 @@ export default function Navigation() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "Authors", "Styleguide","test", "team", "worklog"].map((text, index) => (
+        {["Home", "Authors", "Styleguide","test", "Team", "Worklog"].map((text, index) => (
           <ListItem button key={text}>       
             <Link to={`/${text}`}>
               <ListItemIcon>
                 <InboxIcon />
               </ListItemIcon>
-              {text}
+              <Trans>{text}</Trans>
             </Link>
           </ListItem>
         ))}

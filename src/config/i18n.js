@@ -4,20 +4,29 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translationEN from '../locales/en/translation.json';
 import translationRU from '../locales/ru/translation.json';
-import translationInterfaceRU from '../locales/ru/translation-interface.json';
 import translationBY from '../locales/by/translation.json';
-
+import translationInterfaceEN from '../locales/en/interface.json';
+import translationInterfaceRU from '../locales/ru/interface.json';
+import translationInterfaceBY from '../locales/by/interface.json';
+import translationTeamEN from '../locales/en/team.json';
+import translationTeamRU from '../locales/ru/team.json';
+import translationTeamBY from '../locales/by/team.json';
 
 const resources = {
   en: {
-    translation: translationEN,
+    tr: translationEN,
+    in: translationInterfaceEN,
+    te: translationTeamEN,
   },
   ru: {
-    translation: translationRU,
-    translation: translationInterfaceRU
+    tr: translationRU,
+    in: translationInterfaceRU,
+    te: translationTeamRU,
   },
   be: {
-    translation: translationBY,
+    tr: translationBY,
+    in: translationInterfaceBY,
+    te: translationTeamBY,
   },
 };
 
@@ -26,7 +35,7 @@ i18n.use(initReactI18next).init({
   fallbackLng: 'en',
   debug: true,
   // ns: ['translation'],
-  // defaultNS: 'translations',
+  defaultNS: 'in',
 
   interpolation: {
     escapeValue: false, // not needed for react as it escapes by default
