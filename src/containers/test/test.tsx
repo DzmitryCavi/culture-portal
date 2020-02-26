@@ -13,7 +13,7 @@ function Test() {
         <nav>
             <button onClick={() => changeLanguage('ru')}>ru</button>
             <button onClick={() => changeLanguage('en')}>en</button>
-            <button onClick={() => changeLanguage('by')}>by</button>
+            <button onClick={() => changeLanguage('be')}>be</button>
         </nav>
         <div>
             <Trans>

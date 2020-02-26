@@ -16,7 +16,7 @@ const resources = {
     translation: translationRU,
     translation: translationInterfaceRU
   },
-  by: {
+  be: {
     translation: translationBY,
   },
 };

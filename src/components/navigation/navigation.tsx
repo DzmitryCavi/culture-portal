@@ -18,6 +18,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -63,7 +64,12 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Navigation() {
   const classes = useStyles();
-  const [lang, setLang] = React.useState("");
+  
+  const { i18n } = useTranslation();
+  const changeLanguage = (lng: string): void => {
+    i18n.changeLanguage(lng);
+  };
+
   const [state, setState] = React.useState({
     menu: false
   });
@@ -81,8 +87,9 @@ export default function Navigation() {
     setState({ ...state, menu: open });
   };
 
+
   const handleLangChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setLang(event.target.value as string);
+    changeLanguage(event.target.value as string);
   };
 
   const sideList = () => (
@@ -127,13 +134,13 @@ export default function Navigation() {
           <FormControl className={classes.input}>
             <NativeSelect
               id="demo-customized-select-native"
-              value={lang}
+              value='en'
               onChange={handleLangChange}
               // input={<BootstrapInput />}
             >
-              <option value={'Ru'}>Ru</option>
-              <option value={'En'}>En</option>
-              <option value={'Be'}>Be</option>
+              <option value={'ru'}>Ru</option>
+              <option value={'en'}>En</option>
+              <option value={'be'}>Be</option>
             </NativeSelect>
           </FormControl>
         </Toolbar>
