@@ -4,6 +4,7 @@ import './Team.sass';
 import { Grid, Paper, Typography, Avatar, Box, Link } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Trans } from 'react-i18next';
 
 interface User {
   id: number;
@@ -14,11 +15,13 @@ interface User {
   description: string;
 }
 
-function Card({ name, photoUrl, linkGit, linkLinkedIn, description }: User) {
+function Card({ id, photoUrl, linkGit, linkLinkedIn, description }: User) {
   return (
     <Grid item>
       <Paper className="paper" elevation={3}>
-        <Typography className="author">Author</Typography>
+        <Typography className="author">
+          <Trans>in:Author</Trans>
+        </Typography>
         <Grid container justify="flex-start" alignItems="center">
           <Grid item>
             <Box className="avatar_box">
@@ -27,7 +30,7 @@ function Card({ name, photoUrl, linkGit, linkLinkedIn, description }: User) {
           </Grid>
           <Grid item>
             <Typography className="author" variant="h6">
-              {name}
+              <Trans>te:{id.toString()}.name</Trans>
             </Typography>
             <Box className="link_box">
               <Box className="link_box--item">

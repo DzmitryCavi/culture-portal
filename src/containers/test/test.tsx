@@ -17,14 +17,13 @@ function Test() {
         </nav>
         <div>
             <Trans>
-                {name}.timeLine.{k}.text
+                tr:{name}.timeLine.{k}.text
             </Trans>
             <Trans>
-                Button.Home
+                in:Home
             </Trans>
         </div>
     </div>
-         
   );
 }
 
