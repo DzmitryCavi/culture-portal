@@ -2,7 +2,6 @@
   padding: 10px 20px
   background-color: #303030
   color: white
-  border-radius: 18px
 
 .home-name
   text-align: center
@@ -12,6 +11,10 @@
   text-align: justify
   column-count: 3
 
+.container-photo
+    text-align: center
+    width: 340px
+
 .director
   display: flex
   justify-content: space-around
@@ -20,49 +23,42 @@
   border-radius: 5px
   margin-top: 40px
 
-.container-photo
-
 .director-characteristic
   text-align: center
+  margin-top: 60px
   margin-left: 20px
 
 .director-photo
-  width: 340px
   border-radius: 5px
 
-.director-name
-  font-size: 40px
-
-.director-years
-  font-size: 25px
+.director-name, .director-years
+  margin-top: 20px
 
 .director-description
   margin: 20px 0
-  font-size: 20px
 
 @media (max-width: 1040px)
   .home-article
     column-count: 2
 
-  .director-photo
+  .container-photo
     width: 290px
 
 @media (max-width: 767px)
   .director
     display: block
 
-  .director-photo
-    width: 250px
-
   .container-photo
     text-align: center
+    width: 250px
+    margin: 0 auto
 
 @media (max-width: 576px)
   .home-article
     column-count: 1
 
-  .director-photo
-    width: 200px
+  .container-photo
+      width: 200px
 
   .director-characteristic
     margin-left: 0

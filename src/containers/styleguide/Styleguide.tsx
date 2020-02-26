@@ -7,7 +7,7 @@ function Home() {
     <div className='styleguide'>
       <h1 className='styleguide-name'>STYLEGUIDE</h1>
       <div className='links'>
-        <h2>Links</h2>
+        <h3>Links</h3>
         <div className='link'>
           <Link color='secondary'>
             Link
@@ -15,7 +15,7 @@ function Home() {
         </div>
       </div>
       <div className='buttons'>
-        <h2>Buttons</h2>
+        <h3>Buttons</h3>
         <Grid container spacing={2}>
           <Grid container justify="space-around" item sm={4} md={2} lg={2} spacing={0}>
             <Button variant="contained">Default</Button>
@@ -35,7 +35,7 @@ function Home() {
         </Grid>
       </div>
       <div className='inputs'>
-        <h2>Input</h2>
+        <h3>Input</h3>
         <div className='input'>
           <form className='abc'>
             <TextField
@@ -48,18 +48,18 @@ function Home() {
         </div>
       </div>
       <div className='typography-elements'>
-        <h2>Typography elements</h2>
+        <h3>Typography elements</h3>
         Используемые картинки(по факту закинем)
       </div>
       <div className='colors'>
-        <h2>Colors and its purpose</h2>
+        <h3>Colors and its purpose</h3>
         <div>
           <div className='color-styleguide first'>First</div>
           <div className='color-styleguide second'>Second</div>
         </div>
       </div>
       <div className='icons'>
-        <h2>Icons</h2>
+        <h3>Icons</h3>
          По факту добавим
       </div>
     </div>
