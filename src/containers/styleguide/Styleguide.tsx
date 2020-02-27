@@ -1,21 +1,21 @@
 import React from 'react';
 import './Styleguide.sass';
-import { Link, Grid, Button, TextField } from '@material-ui/core'
+import { Link, Grid, Button, TextField, Box, Typography } from '@material-ui/core'
 
 function Home() {
   return (
-    <div className='styleguide'>
-      <h1 className='styleguide-name'>STYLEGUIDE</h1>
-      <div className='links'>
-        <h3>Links</h3>
-        <div className='link'>
+    <Box className='styleguide'>
+      <Typography className='styleguide-name' variant="h2">STYLEGUIDE</Typography>
+      <Box className='links'>
+        <Typography className='styleguide-name' variant="h3">Links</Typography>
+        <Box className='link'>
           <Link color='secondary'>
             Link
           </Link>
-        </div>
-      </div>
-      <div className='buttons'>
-        <h3>Buttons</h3>
+        </Box>
+      </Box>
+      <Box className='buttons'>
+      <Typography className='styleguide-name' variant="h3">Buttons</Typography>
         <Grid container spacing={2}>
           <Grid container justify="space-around" item sm={4} md={2} lg={2} spacing={0}>
             <Button variant="contained">Default</Button>
@@ -33,10 +33,10 @@ function Home() {
             <Button variant="contained" color="primary" href="#contained-buttons">Link</Button>
           </Grid>
         </Grid>
-      </div>
-      <div className='inputs'>
-        <h3>Input</h3>
-        <div className='input'>
+      </Box>
+      <Box className='inputs'>
+        <Typography className='styleguide-name' variant="h3">Input</Typography>
+        <Box className='input'>
           <form className='abc'>
             <TextField
               id="outlined-secondary"
@@ -45,24 +45,22 @@ function Home() {
               color="secondary"
             />
           </form>
-        </div>
-      </div>
-      <div className='typography-elements'>
-        <h3>Typography elements</h3>
+        </Box>
+      </Box>
+      <Box className='typography-elements'>
+        <Typography className='styleguide-name' variant="h3">Typography elements</Typography>
         Используемые картинки(по факту закинем)
-      </div>
-      <div className='colors'>
-        <h3>Colors and its purpose</h3>
-        <div>
-          <div className='color-styleguide first'>First</div>
-          <div className='color-styleguide second'>Second</div>
-        </div>
-      </div>
-      <div className='icons'>
-        <h3>Icons</h3>
+      </Box>
+      <Box className='colors'>
+        <Typography className='styleguide-name' variant="h3">Colors and its purpose</Typography>
+        <Box className='color-styleguide first'>First</Box>
+        <Box className='color-styleguide second'>Second</Box>
+      </Box>
+      <Box className='icons'>
+        <Typography className='styleguide-name' variant="h3">Icons</Typography>
          По факту добавим
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
