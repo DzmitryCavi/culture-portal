@@ -8,7 +8,7 @@ import {
 import './App.sass';
 
 import Navigation from './components/navigation/navigation';
-import Authors from './containers/authors/authors';
+import Directors from './containers/directors/directors';
 import Home from './containers/home/Home';
 import Worklog from './containers/worklog/Worklog';
 import Test from './containers/test/test';
@@ -30,7 +30,7 @@ function App() {
               <Styleguide />
             </Route>
             <Route path="/authors">
-              <Authors />
+              <Directors />
             </Route>
             <Route path="/test">
               <Test />

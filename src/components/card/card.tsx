@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { TextField,
+import { 
     Card,
     CardActionArea,
     CardActions,
@@ -11,14 +11,16 @@ import { TextField,
     Modal,
     Fade,
  } from '@material-ui/core'
-
+ import { Trans } from 'react-i18next';
+import Directors from '../../locales/en/translation.json'
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
       },
     media: {
-        height: 200
+        height: 200,
+        'background-size':'contain'
     },
     modal: {
       margin: 'auto',
@@ -27,7 +29,13 @@ const useStyles = makeStyles({
     },
 });
 
-function Authors() {
+interface PROPS {
+    director: string
+}
+
+function InfoCard(props: PROPS) {
+  const {director} = props;
+  const getKeyValue = (key: string) => (obj: Record<string, any>) => obj[key];
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -41,33 +49,38 @@ function Authors() {
   const classes = useStyles();
 
   return (
-    <div>
-        <span>Search</span>
-        <TextField />
         <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
                 className={classes.media}
-                image="https://minsknews.by/wp-content/uploads/2020/02/Boris-Luczenko-e1580914632504.jpg"
+                image={getKeyValue(director)(Directors).img[0]}
                 title="Contemplative Reptile"
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                    Barys Lucenka
+                    <Trans>
+                        tr:{director}.name
+                    </Trans>
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    16.09.1937 - 05.02.2020
-                    Belarusian theater director, People’s Artist of Belarus 1995.
+                    <Trans>
+                        tr:{director}.date
+                    </Trans>
+                    <Trans>
+                        tr:{director}.description
+                    </Trans>
                 </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary">
-                Learn More
+                    <Trans>
+                        in:LEARN MORE
+                    </Trans>
                 </Button>
+                <Button variant="contained" color="secondary" onClick={handleOpen}>Watch the video</Button>
             </CardActions>
 
-            <Button variant="contained" color="secondary" onClick={handleOpen}>Watch the video</Button>
              <Modal
                className={classes.modal}
                open={open}
@@ -83,8 +96,7 @@ function Authors() {
                </Fade>
              </Modal>
         </Card>
-    </div>
   );
 }
 
-export default Authors;
+export default InfoCard;
