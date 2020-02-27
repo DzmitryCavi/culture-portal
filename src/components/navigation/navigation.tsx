@@ -136,7 +136,7 @@ export default function Navigation() {
           <FormControl className={classes.input}>
             <NativeSelect
               id="demo-customized-select-native"
-              value='en'
+              // value='en'
               onChange={handleLangChange}
               // input={<BootstrapInput />}
             >
