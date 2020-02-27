@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
+import YandexMap from './YandexMap'
 
 function Test() {
   const { i18n } = useTranslation();
@@ -23,6 +24,7 @@ function Test() {
                 in:Home
             </Trans>
         </div>
+        <YandexMap />
     </div>
   );
 }
