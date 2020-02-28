@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box, Paper } from '@material-ui/core'
 import {TableContainer, Table, TableHead, TableRow, TableCell, TableBody} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import { Trans }  from 'react-i18next';
 
 const useStyles = makeStyles({
   table: {
@@ -28,16 +29,30 @@ function WorklogTable() {
     <Box>
       <Box my={5}>
         <Typography align='center' variant='h4' >
-          Worklog
+          <Trans>
+            in:Worklog
+          </Trans>
         </Typography>
       </Box>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label='simple table'>
           <TableHead>
             <TableRow>
-              <TableCell>Date</TableCell>
-              <TableCell align='center'>Time spent</TableCell>
-              <TableCell align='right'>Performed work</TableCell>
+              <TableCell>
+                <Trans>
+                  in:Date
+                </Trans>
+              </TableCell>
+              <TableCell align='center'>
+                <Trans>
+                  in:Time spent
+                </Trans>
+              </TableCell>
+              <TableCell align='right'>
+                <Trans>
+                  in:Performed work
+                </Trans>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
