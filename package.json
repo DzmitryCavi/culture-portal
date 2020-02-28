@@ -25,7 +25,9 @@
     "react-scripts": "3.4.0",
     "react-yandex-maps": "^4.2.0",
     "redux": "^4.0.5",
-    "typescript": "^3.7.5"
+    "typeface-roboto": "0.0.75",
+    "typescript": "^3.7.5",
+    "vertical-timeline-component-for-react": "^1.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
