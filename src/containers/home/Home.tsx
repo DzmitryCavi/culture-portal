@@ -5,25 +5,15 @@ import { Trans } from 'react-i18next';
 
 import data from '../../locales/en/translation.json'
 
-
-// interface director {
-//   id: number;
-//   name: string;
-//   photoUrl: string;
-//   date: string,
-//   description: string;
-// }
-
-
 function Home() {
   let director = null;
 
-  function getDerector() {
+  (function getDerector() {
     const indexDirector = Math.floor(Math.random() * Math.floor(7));
     director = Object.keys(data)[indexDirector];
-  }
+  }())
 
-  getDerector();
+  const getKeyValue = (key: any ) => (obj: Record<string, any>) => obj[key];
 
   return (
     <Box className='home'>
@@ -38,7 +28,7 @@ function Home() {
           <CardMedia
             component="img"
             className='director-photo'
-            image="https://minsknews.by/wp-content/uploads/2020/02/Boris-Luczenko-e1580914632504.jpg"
+            image={getKeyValue(director)(data).img[0]}
             title="director"
             />
         </Box>
@@ -50,7 +40,7 @@ function Home() {
           </Box>
           <Box className='director-years'>
             <Typography  variant="h5">
-              tr:{director}.date
+              <Trans>tr:{director}.date</Trans>
             </Typography>
           </Box>
           <Box className='director-description'>

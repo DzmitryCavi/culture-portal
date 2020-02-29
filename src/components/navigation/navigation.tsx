@@ -70,6 +70,7 @@ export default function Navigation() {
   const { i18n } = useTranslation();
   const changeLanguage = (lng: string): void => {
     i18n.changeLanguage(lng);
+    console.log(i18n.language);
   };
 
   const [state, setState] = React.useState({
