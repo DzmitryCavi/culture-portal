@@ -9,6 +9,7 @@ import './App.sass';
 
 import Navigation from './components/navigation/navigation';
 import Directors from './containers/directors/directors';
+import Director from './containers/director/Director';
 import Home from './containers/home/Home';
 import Worklog from './containers/worklog/Worklog';
 import Test from './containers/test/test';
@@ -28,6 +29,9 @@ function App() {
           <Switch>
             <Route path="/styleguide">
               <Styleguide />
+            </Route>
+            <Route path="/director/:directorName">
+              <Director />
             </Route>
             <Route path="/authors">
               <Directors />
