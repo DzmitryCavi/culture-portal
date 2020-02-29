@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import YandexMap from './YandexMap'
+// import YandexMap from './YandexMap'
 
 function Test() {
   const { i18n } = useTranslation();
@@ -9,7 +9,7 @@ function Test() {
   };
   const k = '0';
   const name = 'Lutsenko';
-  return ( 
+  return (
     <div>
         <nav>
             <button onClick={() => changeLanguage('ru')}>ru</button>
@@ -24,7 +24,7 @@ function Test() {
                 in:Home
             </Trans>
         </div>
-        <YandexMap />
+  
     </div>
   );
 }

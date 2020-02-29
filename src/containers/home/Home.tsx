@@ -1,16 +1,37 @@
 import React from 'react';
 import './Home.sass';
 import { Button, Box, Typography, CardMedia } from '@material-ui/core';
+import { Trans } from 'react-i18next';
+
+import data from '../../locales/en/translation.json'
+
+
+// interface director {
+//   id: number;
+//   name: string;
+//   photoUrl: string;
+//   date: string,
+//   description: string;
+// }
 
 
 function Home() {
+  let director = null;
+
+  function getDerector() {
+    const indexDirector = Math.floor(Math.random() * Math.floor(7));
+    director = Object.keys(data)[indexDirector];
+  }
+
+  getDerector();
+
   return (
     <Box className='home'>
       <Typography className='home-name' variant="h2">
-        Culture Portal
+        <Trans>in:Culture Portal</Trans>
       </Typography>
       <Typography className='home-article'>
-        A theatre director or stage director is an instructor in the theatre fiel who oversees and orchestrates the mounting of a theatre production (a play, opera, musical, or devised piece of work) by unifying various endeavours and aspects of production. The director's function is to ensure the quality and completeness of theatre production and to lead the members of the creative team into realizing their artistic vision for it. The director thereby collaborates with a team of creative individuals and other staff, coordinating research, stagecraft, costume design, props, lighting design, acting, set design, stage combat, and sound design for the production. If the production is a new piece of writing or a (new) translation of a play, the director may also work with the playwright or a translator.
+        <Trans>in:CP-description</Trans>
       </Typography>
       <Box className='director'>
         <Box className='container-photo'>
@@ -24,20 +45,20 @@ function Home() {
         <Box className='director-characteristic'>
           <Box className='director-name'>
             <Typography  variant="h3">
-              Barys Lucenka
+              <Trans>tr:{director}.name</Trans>
             </Typography>
           </Box>
           <Box className='director-years'>
             <Typography  variant="h5">
-              16.09.1937 - 05.02.2020
+              tr:{director}.date
             </Typography>
           </Box>
           <Box className='director-description'>
             <Typography  variant="h6">
-              Belarusian theater director, People’s Artist of Belarus 1995
+              <Trans>tr:{director}.description</Trans>
             </Typography>
           </Box>
-          <Button variant="contained" color="secondary">Learn more</Button>
+          <Button variant="contained" color="secondary"><Trans>in:Learn more</Trans></Button>
         </Box>
       </Box>
     </Box>
