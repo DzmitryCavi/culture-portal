@@ -3,6 +3,9 @@ import './Director.sass';
 import { Box, Grid, Typography } from '@material-ui/core';
 import { Trans } from 'react-i18next';
 import Directors from '../../locales/en/translation.json';
+import YandexMap from './YandexMap';
+import TimeLine from './TimeLine';
+import WorksTable from './WorksTable';
 
 import {
   useParams
@@ -11,7 +14,6 @@ import {
 
 function Director() {
   let { directorName } = useParams();
-  console.log(typeof directorName);
   const getKeyValue = (key: any ) => (obj: Record<string, any>) => obj[key];
   return (
       <Grid container spacing={3}>
@@ -33,19 +35,19 @@ function Director() {
         </Grid>
         <Grid item xs={12}>
           <Box>
-            <Typography variant="body1" align="center">
-              VerticalTimeline
-            </Typography>
+            {/* <Trans>
+              tr:{name}.timeLine.{k}.text
+            </Trans>
+ */}
+            <TimeLine director={directorName} />
           </Box>
         </Grid>
         <Grid item xs={12}>
           <Box>
-            <Typography variant="body1" align="center">
-              ListWithDirectorsWork
-            </Typography>
+            <WorksTable director={directorName} />
           </Box>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Typography variant="body1" align="center">
             Slider with Photo Gallery
           </Typography>
@@ -56,6 +58,11 @@ function Director() {
               Youtube video
             </Typography>
            </Box>
+        </Grid> */}
+        <Grid item xs={12}>
+          <Box className="map">
+            <YandexMap />
+          </Box>
         </Grid>
       </Grid>
   );

@@ -53,10 +53,6 @@ export const teamData = [
     photoUrl: 'https://avatars3.githubusercontent.com/u/3716701?s=460&v=4',
     linkGit: 'https://github.com/hardlin3r',
     linkLinkedIn: 'https://www.linkedin.com/in/',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Accusamus corporis nemo expedita neque aspernatur adipisci
-        pariatur! Consequuntur perferendis veritatis possimus odit
-        laboriosam accusantium, nobis, ut eos officia mollitia unde
-        quidem.`,
+    description: `Just software developer, interested in dl/ml and full stack web development`,
   },
 ];
