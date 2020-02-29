@@ -71,7 +71,7 @@ export default function WorksTable(props: PROPS) {
         </TableHead>
         <TableBody>
           {worksList.map((work: any, index: number) => (
-            <StyledTableRow key={work.date}>
+            <StyledTableRow key={`${director}work${index}`}>
               <StyledTableCell component="th" scope="row">
                 <Trans>
                   tr:{director}.work.{`${index}`}.date

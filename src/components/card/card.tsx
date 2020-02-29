@@ -12,7 +12,8 @@ import {
     Fade,
  } from '@material-ui/core'
  import { Trans } from 'react-i18next';
-import Directors from '../../locales/en/translation.json'
+import Directors from '../../locales/en/translation.json';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
@@ -73,11 +74,13 @@ function InfoCard(props: PROPS) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    <Trans>
-                        in:LEARN MORE
-                    </Trans>
-                </Button>
+                <Link to={`/director/${director}`}>
+                    <Button size="small" color="primary">
+                        <Trans>
+                            in:LEARN MORE
+                        </Trans>
+                    </Button>
+                </Link>
                 <Button variant="contained" color="secondary" onClick={handleOpen}>Watch the video</Button>
             </CardActions>
 

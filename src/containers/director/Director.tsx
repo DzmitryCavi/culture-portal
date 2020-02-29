@@ -1,7 +1,8 @@
 import React from 'react';
 import './Director.sass';
 import { Box, Grid, Typography } from '@material-ui/core';
-// import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
+import Directors from '../../locales/en/translation.json';
 
 import {
   useParams
@@ -10,26 +11,25 @@ import {
 
 function Director() {
   let { directorName } = useParams();
-  const director = {
-    fullName: "Vasiliy Terkin",
-    image: "https://fordhamobserver.com/wp-content/uploads/2019/03/News_Maguire_ZoeyLiu_2-1.jpg",
-    alt: "",
-    shortDescription: "This is Vasiliy Terkin the author of the Fantom In the Opera",
-    yearsOfLife: "1900-1999",
-  }
-
+  console.log(typeof directorName);
+  const getKeyValue = (key: any ) => (obj: Record<string, any>) => obj[key];
   return (
-    <div>
       <Grid container spacing={3}>
         <Grid item xs={8}>
           <Typography variant="h4" align="center">
-            {directorName} {director.fullName}
+            <Trans>
+              tr:{directorName}.name
+            </Trans>
           </Typography>
-          <p>{director.shortDescription}</p>
-          <p>Years of life: {director.yearsOfLife}</p>
+          <Trans>
+              tr:{directorName}.description
+          </Trans>
+          <Trans>
+              tr:{directorName}.date
+          </Trans>
         </Grid>
         <Grid item xs={4}>
-          <img className="director-image" src={director.image} alt={director.alt}/>
+          <img className="director-image" src={getKeyValue(directorName)(Directors).img[0]} alt={''}/>
         </Grid>
         <Grid item xs={12}>
           <Box>
@@ -58,7 +58,6 @@ function Director() {
            </Box>
         </Grid>
       </Grid>
-    </div>
   );
 }
 
