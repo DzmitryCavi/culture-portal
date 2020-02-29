@@ -3,24 +3,18 @@ import { Typography, Box, Paper } from '@material-ui/core'
 import {TableContainer, Table, TableHead, TableRow, TableCell, TableBody} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import { Trans }  from 'react-i18next';
+import { worklogTables } from './worklogTables';
 
 const useStyles = makeStyles({
   table: {
     minWidth: 300,
+    maxWidth: 700,
+    margin: '0 auto'
+  },
+  typography: {
+    margin: 30,
   },
 });
-
-function createRows(date:string, timeSpent:string, performedWork:string) {
-  return { date, timeSpent, performedWork};
-}
-
-const rows = [
-  createRows('19.02.20', '2h', 'Author\'s page timeline implemented'),
-  createRows('20.02.20', '3h', 'Other functionality'),
-  createRows('21.02.20', '4h', 'Other functionality'),
-  createRows('22.02.20', '2h', 'Other functionality'),
-  createRows('23.02.20', '5h', 'Other functionality'),
-];
 
 function WorklogTable() {
   const classes = useStyles();
@@ -34,40 +28,37 @@ function WorklogTable() {
           </Trans>
         </Typography>
       </Box>
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label='simple table'>
-          <TableHead>
-            <TableRow>
-              <TableCell>
-                <Trans>
-                  in:Date
-                </Trans>
-              </TableCell>
-              <TableCell align='center'>
-                <Trans>
-                  in:Time spent
-                </Trans>
-              </TableCell>
-              <TableCell align='right'>
-                <Trans>
-                  in:Performed work
-                </Trans>
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map(row => (
-              <TableRow key={row.date}>
-                <TableCell component='th' scope='row'>
-                  {row.date}
-                </TableCell>
-                <TableCell align='center'>{row.timeSpent}</TableCell>
-                <TableCell align='right'>{row.performedWork}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+      {worklogTables.map(table => (
+        <Box key={table.id}>
+          <Typography align='center' className={classes.typography} variant='h5' ><Trans>te:{table.id.toString()}.name</Trans></Typography>
+          <TableContainer className={classes.table} component={Paper}>
+            <Table aria-label='simple table'>
+              <TableHead>
+                <TableRow>
+                  <TableCell>
+                    <Trans>
+                      in:Time spent
+                    </Trans>
+                  </TableCell>
+                  <TableCell align='right'>
+                    <Trans>
+                      in:Performed work
+                    </Trans>
+                  </TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {table.performedWork.map(row => (
+                  <TableRow key={row.performedWork}>
+                    <TableCell>{row.timeSpent}</TableCell>
+                    <TableCell align='right'><Trans>te:{table.id.toString()}.performedWork.{row.performedWork}</Trans></TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Box>
+      ))}
     </Box>
   );
 }

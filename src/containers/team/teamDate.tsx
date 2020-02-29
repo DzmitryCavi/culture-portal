@@ -41,11 +41,7 @@ export const teamData = [
     photoUrl: 'https://avatars0.githubusercontent.com/u/55135198?s=460&v=4',
     linkGit: 'https://github.com/ziknation/',
     linkLinkedIn: 'https://www.linkedin.com/in/',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Accusamus corporis nemo expedita neque aspernatur adipisci
-        pariatur! Consequuntur perferendis veritatis possimus odit
-        laboriosam accusantium, nobis, ut eos officia mollitia unde
-        quidem.`,
+    description: `BSUIR student. Learning the full stack web development for myself. Studied at RS School 2019 Q3.`,
   },
   {
     id: 4,

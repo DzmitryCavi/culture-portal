@@ -2,27 +2,50 @@
   "0":{
     "name": "Дзмітрый Малахоўскі",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "выполненная праца 1"
+    }
     },
   "1":{
     "name": "Васіль Пісарэнка",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "выполненная праца 1"
+    }
     },
   "2":{
     "name": "Юрый Вашкевіч",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+      "performedWork":{
+        "performedWork1": "Дадаў i18next",
+        "performedWork2": "Дадаў інфармацыю пра 3-х рэжысёраў у json",
+        "performedWork3": "Дадаў старонку каманды",
+        "performedWork4": "інфармацыю пра 4-х рэжысёраў у json",
+        "performedWork5": "Стварыў кампаненты TimeLine и WorkTable",
+        "performedWork6": "Стварыў кампанент slider"
+      }
     },
   
   "3":{
     "name": "Юрый Зікееў",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "Дадаў старонку часопіса работ",
+      "performedWork2": "Дадаў яндэкс карту для старонкі дырэктара",
+      "performedWork3": "Дадаў пераклад інтэрфэйсу часопіса работ"
+    }
     },
   "4":{
     "name": "Алдар Антонаў",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "Разбіраўся з праектам / hooks / typescript",
+      "performedWork2": "Кампаноўка старонкі з рэжысёрам"
+    }
     }
 }
