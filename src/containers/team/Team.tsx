@@ -11,7 +11,6 @@ interface Car {
   photoUrl: string;
   linkGit: string;
   linkLinkedIn: string;
-  description: string;
 }
 
 interface CarProps {
@@ -27,7 +26,6 @@ function Team() {
       photoUrl={user.photoUrl}
       linkGit={user.linkGit}
       linkLinkedIn={user.linkLinkedIn}
-      description={user.description}
     />
   ));
 
