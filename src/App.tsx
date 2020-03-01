@@ -12,7 +12,6 @@ import Directors from './containers/directors/directors';
 import Director from './containers/director/Director';
 import Home from './containers/home/Home';
 import Worklog from './containers/worklog/Worklog';
-import Test from './containers/test/test';
 import Styleguide from './containers/styleguide/Styleguide';
 import Team from './containers/team/Team';
 import { useTranslation } from 'react-i18next';
@@ -33,9 +32,6 @@ function App() {
             </Route>
             <Route path="/authors">
               <Directors />
-            </Route>
-            <Route path="/test">
-              <Test />
             </Route>
             <Route path="/worklog">
               <Worklog />
