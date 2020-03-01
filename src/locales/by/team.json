@@ -2,18 +2,12 @@
   "0":{
     "name": "Дзмітрый Малахоўскі",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
-    "performedWork":{
-      "performedWork1": "выполненная праца 1"
-    }
+      "Студэнт RS School. Фронтенд-распрацоўшчык."
     },
   "1":{
     "name": "Васіль Пісарэнка",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
-    "performedWork":{
-      "performedWork1": "выполненная праца 1"
-    }
+        "Студэнт RS School. Фронтенд-распрацоўшчык."
     },
   "2":{
     "name": "Юрый Вашкевіч",

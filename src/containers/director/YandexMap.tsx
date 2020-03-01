@@ -8,6 +8,9 @@ const useStyles = makeStyles({
     width: '600px',
     height: '400px'
   },
+  map__container: {
+    margin: '0 auto',
+  }
 });
 
 let mapData = {
@@ -20,7 +23,7 @@ let PlacemarkCoordinates = [53.89, 27.55];
 export default function YandexMap () {
   const classes = useStyles();
   return ( 
-    <Box>
+    <Box className={classes.map__container}>
       <YMaps>
         <Map defaultState={ mapData } className={classes.map}>
           <Placemark defaultGeometry={PlacemarkCoordinates} />
