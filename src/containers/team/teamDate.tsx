@@ -26,6 +26,7 @@ export const teamData = [
     photoUrl: 'https://avatars0.githubusercontent.com/u/55135198?s=460&v=4',
     linkGit: 'https://github.com/ziknation/',
     linkLinkedIn: 'https://www.linkedin.com/in/',
+    description: `BSUIR student. Learning the full stack web development for myself. Studied at RS School 2019 Q3.`,
   },
   {
     id: 4,

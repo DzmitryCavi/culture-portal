@@ -15,8 +15,10 @@
   "Self-evaluation": "Self-evaluation",
   "Calculated mark": "Calculated mark:",
   "Date": "Date",
-  "Time spent": "Time spent",
+  "Time spent": "Time spent (hours)",
   "Performed work": "Performed work",
+  "Distribution of duties": "Distribution of duties",
+  "Searching time for team discussions": "Searching time for team discussions",
 
   "Min scope": "Min scope - 50",
   "Min scope 1": "10 Main page + page with a list of authors + author's page (only pages with content without widgets)",
