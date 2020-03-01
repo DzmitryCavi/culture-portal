@@ -50,6 +50,7 @@ interface PROPS {
 }
 
 export default function WorksTable(props: any) {
+
   const { director } = props;
   const classes = useStyles();
   const dataDirector: any = Directors;

@@ -2,27 +2,27 @@
   "0":{
     "name": "Dzmitry Malakhouski",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+      "Student RS School. Frontend developer."
     },
   "1":{
     "name": "Vasiliy Pisarenka",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Student RS School. Frontend developer."
     },
   "2":{
     "name": "Yury Vashkevich",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Student RS School. Frontend developer. This is my first team development site."
     },
   
   "3":{
     "name": "Yury Zikeyeu",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Student RS School. Frontend developer."
     },
   "4":{
     "name": "Aldar Antonov",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Just software developer, interested in dl/ml and full stack web development."
     }
 }

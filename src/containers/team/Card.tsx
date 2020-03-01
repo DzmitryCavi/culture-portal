@@ -12,10 +12,9 @@ interface User {
   photoUrl: string;
   linkGit: string;
   linkLinkedIn: string;
-  description: string;
 }
 
-function Card({ id, photoUrl, linkGit, linkLinkedIn, description }: User) {
+function Card({ id, photoUrl, linkGit, linkLinkedIn }: User) {
   return (
     <Grid item>
       <Paper className="paper" elevation={3}>
@@ -46,7 +45,11 @@ function Card({ id, photoUrl, linkGit, linkLinkedIn, description }: User) {
             </Box>
           </Grid>
         </Grid>
-        <Box>{description}</Box>
+        <Box>
+          <Typography variant="subtitle1">
+            <Trans>te:{id.toString()}.description</Trans>
+          </Typography>
+        </Box>
       </Paper>
     </Grid>
   );

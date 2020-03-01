@@ -2,27 +2,27 @@
   "0":{
     "name": "Дмитрий Малаховский",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+      "Студент RS School. Фронтенд-разработчик. "
     },
   "1":{
     "name": "Василий Писаренко",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Студент RS School. Фронтенд-разработчик."
     },
   "2":{
     "name": "Юрий Вашкевич",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Студент RS School. Фронтенд-разработчик. Это моя первая командная разработка сайта."
     },
   
   "3":{
     "name": "Юрий Зикеев",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Студент RS School. Фронтенд-разработчик."
     },
   "4":{
     "name": "Алдар Антонов",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Просто разработчик, интересующийся dl/ml и фулл стек веб разработкой."
     }
 }
