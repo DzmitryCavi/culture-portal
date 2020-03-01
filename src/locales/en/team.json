@@ -2,27 +2,51 @@
   "0":{
     "name": "Dzmitry Malakhouski",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "performed work 1"
+    }
     },
   "1":{
     "name": "Vasiliy Pisarenka",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "performed work 1"
+    }
     },
   "2":{
     "name": "Yury Vashkevich",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "Insert i18next",
+      "performedWork2": "Insert data about 3 directors in json",
+      "performedWork3": "Create a team page",
+      "performedWork4": "Insert data about 4 directors in json",
+      "performedWork5": "Create components TimeLine and WorkTable",
+      "performedWork6": "Create component slider"
+    }
     },
   
   "3":{
     "name": "Yury Zikeyeu",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "Add worklog page",
+      "performedWork2": "Add yandex map block for directors page",
+      "performedWork3": "Add worklog interface translation"
+    }
     },
   "4":{
     "name": "Aldar Antonov",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores."
+
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+    "performedWork":{
+      "performedWork1": "Dealt with the project / hooks / typescript",
+      "performedWork2": "Director page layout"
+    }
     }
 }

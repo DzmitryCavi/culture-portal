@@ -15,8 +15,15 @@
   "Self-evaluation": "Self-evaluation",
   "Calculated mark": "Calculated mark:",
   "Date": "Date",
+<<<<<<< HEAD
   "Time spent": "Time spent",
   "Performed work": "Performed work",
+=======
+  "Time spent": "Time spent (hours)",
+  "Performed work": "Performed work",
+  "Distribution of duties": "Distribution of duties",
+  "Searching time for team discussions": "Searching time for team discussions",
+>>>>>>> upstream/dev
 
   "Min scope": "Min scope - 50",
   "Min scope 1": "10 Main page + page with a list of authors + author's page (only pages with content without widgets)",
@@ -48,6 +55,7 @@
   "Fines 1": "-50 if there are less than 5 commits from each active team member. Everyone should merge their own PRs",
   "Fines 2": "up to -50 points for violations stage2-tasks-requirements",
   "Fines 3": "-40 if there is no worklog for team",
+<<<<<<< HEAD
   "Fines 4": "-20 too primitive (ugly for 2020) design / UX",
 
   "Culture Portal": "Culture Portal",
@@ -69,4 +77,7 @@
   "Second": "Second",
   "Icons": "Icons"
 
+=======
+  "Fines 4": "-20 too primitive (ugly for 2020) design / UX"
+>>>>>>> upstream/dev
 }
