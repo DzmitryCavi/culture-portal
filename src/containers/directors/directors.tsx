@@ -9,10 +9,17 @@ import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      padding: 10
+    },
     search: {
       width: '100%',
-      margin: 10
+      color: 'azure !important'
     },
+    card: {
+      display: 'flex',
+      justifyContent: 'center'
+    }
   }),
 );
 
@@ -35,13 +42,13 @@ function Directors() {
   };
 
   return (
-    <Grid container spacing={3}>
+    <Grid container className={classes.root} alignItems="center" justify="center" spacing={1}>
         <Grid item xs={12}>
-          <TextField className = {classes.search} id="outlined-basic" label="Search" variant="outlined" onChange={changeFilter}/>
+          <TextField className={classes.search} id="outlined-basic" label="Search" variant="outlined" onChange={changeFilter}/>
         </Grid>
         {filtredDirectors.map(director => (
-           <Grid key = {director} item sm={6}  md={4} lg={3}>
-              <InfoCard director = {director}/>
+           <Grid className={classes.card} key={director} item sm={6}  md={4} lg={3}>
+              <InfoCard director={director}/>
             </Grid>
         ))}
     </Grid>
