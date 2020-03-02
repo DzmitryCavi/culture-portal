@@ -34,12 +34,18 @@ const StyledTableRow = withStyles((theme: Theme) =>
       '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.background.default,
       },
+      '&:nth-of-type(even)': {
+        backgroundColor: theme.palette.background.default,
+      },
     },
   }),
 )(TableRow);
 
 const useStyles = makeStyles({
   table: {
+    maxWidth: 800,
+  },
+  paper: {
     maxWidth: 800,
     margin: '0 auto',
   },
@@ -50,7 +56,6 @@ interface PROPS {
 }
 
 export default function WorksTable(props: any) {
-
   const { director } = props;
   const classes = useStyles();
   const dataDirector: any = Directors;
@@ -58,7 +63,7 @@ export default function WorksTable(props: any) {
   console.log(worksList);
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className={classes.paper}>
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>

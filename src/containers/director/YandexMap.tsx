@@ -5,8 +5,8 @@ import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 const useStyles = makeStyles({
   map: {
-    width: '600px',
-    height: '400px'
+    maxWidth: '600px',
+    height: '400px',
   },
   map__container: {
     margin: '0 auto',
