@@ -15,6 +15,8 @@
   "Self-evaluation": "Self-evaluation",
   "Calculated mark": "Calculated mark:",
   "Date": "Date",
+  "Time spent": "Time spent",
+  "Performed work": "Performed work",
   "Time spent": "Time spent (hours)",
   "Performed work": "Performed work",
   "Distribution of duties": "Distribution of duties",
@@ -50,5 +52,25 @@
   "Fines 1": "-50 if there are less than 5 commits from each active team member. Everyone should merge their own PRs",
   "Fines 2": "up to -50 points for violations stage2-tasks-requirements",
   "Fines 3": "-40 if there is no worklog for team",
-  "Fines 4": "-20 too primitive (ugly for 2020) design / UX"
+  "Fines 4": "-20 too primitive (ugly for 2020) design / UX",
+
+  "Culture Portal": "Culture Portal",
+  "Learn more": "Learn more",
+  "CP-description": "A theatre director or stage director is an instructor in the theatre fiel who oversees and orchestrates the mounting of a theatre production (a play, opera, musical, or devised piece of work) by unifying various endeavours and aspects of production. The director's function is to ensure the quality and completeness of theatre production and to lead the members of the creative team into realizing their artistic vision for it. The director thereby collaborates with a team of creative individuals and other staff, coordinating research, stagecraft, costume design, props, lighting design, acting, set design, stage combat, and sound design for the production. If the production is a new piece of writing or a (new) translation of a play, the director may also work with the playwright or a translator.",
+
+  "STYLEGUIDE": "STYLEGUIDE",
+  "Links": "Links",
+  "Link": "Link",
+  "Buttons": "Buttons",
+  "Default": "Default",
+  "Primary": "Primary",
+  "Secondary": "Secondary",
+  "Disabled": "Disabled",
+  "Input": "Input",
+  "Typography elements": "Typography elements",
+  "Colors and its purpose": "Colors and its purpose",
+  "First": "First",
+  "Second": "Second",
+  "Icons": "Icons"
+
 }
