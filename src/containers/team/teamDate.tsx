@@ -35,6 +35,5 @@ export const teamData = [
     linkGit: 'https://github.com/hardlin3r',
     linkLinkedIn: 'https://www.linkedin.com/in/',
     description: `Just software developer, interested in dl/ml and full stack web development`,
-
   },
 ];
