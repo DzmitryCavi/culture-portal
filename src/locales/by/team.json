@@ -2,7 +2,15 @@
   "0":{
     "name": "Дзмітрый Малахоўскі",
     "description":
-      "Студэнт RS School. Фронтенд-распрацоўшчык."
+      "Студэнт RS School. Фронтенд-распрацоўшчык.",
+      "performedWork":{
+        "performedWork1": "Старонка аўтараў і яе пераклад",
+        "performedWork2": "Навігацыя",
+        "performedWork3": "Зборка праекта",
+        "performedWork4": "Пошукавыя фільтры",
+        "performedWork5": "Роўтынг",
+        "performedWork6": "Вырашаў merge канфлікты"
+      }
     },
   "1":{
     "name": "Васіль Пісарэнка",

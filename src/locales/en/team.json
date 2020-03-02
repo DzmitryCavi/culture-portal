@@ -4,7 +4,12 @@
     "description":
       "Student RS School. Frontend developer.",
     "performedWork":{
-      "performedWork1": "performed work 1"
+      "performedWork1": "Author's page and translation",
+      "performedWork2": "Navigation",
+      "performedWork3": "Project assembly",
+      "performedWork4": "Search filters",
+      "performedWork5": "Routing",
+      "performedWork6": "Merge conflict resolution"
     }
     },
   "1":{

@@ -4,6 +4,11 @@ export const worklogTables = [
     name: 'Dzmitry Malakhouski',
     performedWork: [
       {timeSpent: '5', performedWork: 'performedWork1'},
+      {timeSpent: '5', performedWork: 'performedWork2'},
+      {timeSpent: '5', performedWork: 'performedWork3'},
+      {timeSpent: '5', performedWork: 'performedWork4'},
+      {timeSpent: '5', performedWork: 'performedWork5'},
+      {timeSpent: '5', performedWork: 'performedWork6'}
     ]
   },
   {

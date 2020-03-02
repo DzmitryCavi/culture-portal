@@ -4,7 +4,12 @@
     "description":
       "Студент RS School. Фронтенд-разработчик.",
     "performedWork":{
-      "performedWork1": "выполненная работа 1"
+      "performedWork1": "Страница авторов и её перевод",
+      "performedWork2": "Навигация",
+      "performedWork3": "Сборка проекта",
+      "performedWork4": "Поисковые фильтры",
+      "performedWork5": "Роутинг",
+      "performedWork6": "Решал merge конфликты"
     }
     },
   "1":{
