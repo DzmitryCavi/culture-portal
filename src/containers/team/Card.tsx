@@ -18,7 +18,7 @@ function Card({ id, photoUrl, linkGit, linkLinkedIn }: User) {
   return (
     <Grid item>
       <Paper className="paper" elevation={3}>
-        <Typography className="author">
+      <Typography className="author" variant="h6">
           <Trans>in:Author</Trans>
         </Typography>
         <Grid container justify="flex-start" alignItems="center">

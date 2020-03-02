@@ -1,15 +1,16 @@
 import React from 'react';
-import Slider from 'react-slick';
+
 import './SliderFoto.sass';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Directors from '../../locales/en/translation.json';
+import Slider from 'react-slick';
 
 interface PROPS {
   director: string;
 }
 
-export default function SliderFoto(props: PROPS) {
+export default function SliderFoto(props: any) {
   const { director } = props;
   const dataDirector: any = Directors;
   const urlFotoList = dataDirector[director].img;

@@ -6,6 +6,7 @@ import Directors from '../../locales/en/translation.json';
 import YandexMap from './YandexMap';
 import TimeLine from './TimeLine';
 import WorksTable from './WorksTable';
+import SliderFoto from './SliderFoto';
 
 import {
   useParams
@@ -42,6 +43,12 @@ function Director() {
             <TimeLine director={directorName} />
           </Box>
         </Grid>
+        <Grid item xs={12}>
+          <Box>  
+            <SliderFoto director={directorName} />
+          </Box>
+        </Grid>
+
         <Grid item xs={12}>
           <Box>
             <WorksTable director={directorName} />

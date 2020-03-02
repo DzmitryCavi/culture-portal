@@ -2,7 +2,7 @@
   "0":{
     "name": "Дмитрий Малаховский",
     "description":
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+      "Студент RS School. Фронтенд-разработчик.",
     "performedWork":{
       "performedWork1": "выполненная работа 1"
     }
@@ -10,7 +10,7 @@
   "1":{
     "name": "Василий Писаренко",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+        "Студент RS School. Фронтенд-разработчик.",
     "performedWork":{
       "performedWork1": "выполненная работа 1"
     }
@@ -18,7 +18,7 @@
   "2":{
     "name": "Юрий Вашкевич",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+        "Студент RS School. Фронтенд-разработчик. Это моя первая командная разработка сайта.",
     "performedWork":{
       "performedWork1": "Добавил i18next",
       "performedWork2": "Добавил информацию про 3-ёх режисёров в json",
@@ -32,7 +32,7 @@
   "3":{
     "name": "Юрий Зикеев",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+        "Студент БГУИР. Изучаю полноценную веб-разработку для себя. Учился в RS School 2019 Q3.",
     "performedWork":{
       "performedWork1": "Добавил страницу журнала работ",
       "performedWork2": "Добавил яндекс карту для страницы директора",
@@ -42,7 +42,7 @@
   "4":{
     "name": "Алдар Антонов",
     "description":
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequuntur minima vel error quo! Sequi cupiditate nostrum dolorum tempore repellendus error molestiae, ut natus accusantium mollitia numquam, possimus accusamus asperiores.",
+        "Просто разработчик, интересующийся dl/ml и фулл стек веб разработкой.",
     "performedWork":{
       "performedWork1": "Разбирался с проектом/hooks/typescript",
       "performedWork2": "Компоновка страницы с режиссером"
