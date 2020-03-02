@@ -5,3 +5,18 @@
 
 .button_group
   margin: 0 auto
+
+@media screen and (max-width: 600px)
+  .button_group
+    display: block !important
+  .button_group_parent
+    display: flex !important
+    flex-direction: column
+    align-items: flex-start
+  .button
+    width: 100%
+
+@media screen and (max-width: 1000px)
+  .evaluation_point
+    flex-wrap: nowrap !important
+    

@@ -12,7 +12,8 @@
     "description":
         "Student RS School. Frontend developer.",
     "performedWork":{
-      "performedWork1": "performed work 1"
+      "performedWork1": "Add home page",
+      "performedWork2": "Add page styleguide"
     }
     },
   "2":{
@@ -36,7 +37,9 @@
     "performedWork":{
       "performedWork1": "Add worklog page",
       "performedWork2": "Add yandex map block for directors page",
-      "performedWork3": "Add worklog interface translation"
+      "performedWork3": "Add worklog interface translation",
+      "performedWork4": "Add button group of team members worklog and drop down table",
+      "performedWork5": "Insert worklog tables filler and it's translation"
     }
     },
   "4":{

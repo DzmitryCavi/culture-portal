@@ -1,6 +1,16 @@
 import React from 'react';
 import {Box, Typography, Grid, Checkbox, } from '@material-ui/core'
 import { Trans } from 'react-i18next';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  evaluation_point: {
+    color: 'green',
+  },
+  checkbox:{
+    
+  }
+});
 
 let mark:number = 0;
 
@@ -33,10 +43,10 @@ const normalScope = [
 
 const extraScope = [
   createCheckboxes(true, 'Extra scope 1', 10),
-  createCheckboxes(true, 'Extra scope 2', 10),
-  createCheckboxes(true, 'Extra scope 3', 10),
-  createCheckboxes(true, 'Extra scope 4', 20),
-  createCheckboxes(true, 'Extra scope 5', 20),
+  createCheckboxes(false, 'Extra scope 2', 10),
+  createCheckboxes(false, 'Extra scope 3', 10),
+  createCheckboxes(false, 'Extra scope 4', 20),
+  createCheckboxes(false, 'Extra scope 5', 20),
   createCheckboxes(true, 'Extra scope 6', 20),
 ]
 
@@ -50,16 +60,18 @@ const fines = [
 
 function SelfEvaluation() {
 
+  const classes = useStyles();
+
   return (
     <Box>
-      <Box my={5}>
+      <Box my={5} key='Self-evaluation'>
         <Typography align='center' variant='h4'>
           <Trans>
             in:Self-evaluation
           </Trans>
         </Typography>
       </Box>
-      <Box m={3}>
+      <Box m={3} key='Min scope'>
         <Typography>
           <Trans>
             in:Min scope
@@ -67,8 +79,8 @@ function SelfEvaluation() {
         </Typography>
       </Box>
       {minScope.map(point => (
-        <Grid container alignItems='center' >
-          <Checkbox size='small' checked={point.isDone} color='primary'/> 
+        <Grid container alignItems='center' key={point.functionality} className='evaluation_point'>
+          <Checkbox checked={point.isDone} color='primary' className={classes.checkbox}/> 
           <Typography >
             <Trans>
               in:{point.functionality}
@@ -76,7 +88,7 @@ function SelfEvaluation() {
           </Typography>
         </Grid>
       ))}
-      <Box m={3}>
+      <Box m={3} key='Normal scope'>
         <Typography>
           <Trans>
             in:Normal scope
@@ -84,8 +96,8 @@ function SelfEvaluation() {
         </Typography>
       </Box>
       {normalScope.map(point => (
-        <Grid container alignItems='center' >
-          <Checkbox size='small' checked={point.isDone} color='primary'/> 
+        <Grid container alignItems='center' key={point.functionality} className='evaluation_point'>
+          <Checkbox checked={point.isDone} color='primary'/> 
           <Typography >
             <Trans>
               in:{point.functionality}
@@ -93,7 +105,7 @@ function SelfEvaluation() {
           </Typography>
         </Grid>
       ))}
-      <Box m={3}>
+      <Box m={3} key='Extra scope'>
         <Typography>
           <Trans>
             in:Extra scope
@@ -101,8 +113,8 @@ function SelfEvaluation() {
         </Typography>
       </Box>
       {extraScope.map(point => (
-        <Grid container alignItems='center' >
-          <Checkbox size='small' checked={point.isDone} color='primary'/> 
+        <Grid container alignItems='center' key={point.functionality} className='evaluation_point'>
+          <Checkbox checked={point.isDone} color='primary'/> 
           <Typography >
             <Trans>
               in:{point.functionality}
@@ -110,7 +122,7 @@ function SelfEvaluation() {
           </Typography>
         </Grid>
       ))}
-      <Box m={3}>
+      <Box m={3} key='Fines'>
         <Typography>
         <Trans>
             in:Fines
@@ -118,8 +130,8 @@ function SelfEvaluation() {
         </Typography>
       </Box>
       {fines.map(point => (
-        <Grid container alignItems='center' >
-          <Checkbox size='small' checked={point.isDone} color='primary'/> 
+        <Grid container alignItems='center' key={point.functionality} className='evaluation_point'>
+          <Checkbox checked={point.isDone} color='primary'/> 
           <Typography >
             <Trans>
               in:{point.functionality}
@@ -127,7 +139,7 @@ function SelfEvaluation() {
           </Typography>
         </Grid>
       ))}
-      <Box my={5}>
+      <Box my={5} key='Calculated mark'>
         <Typography>
           <Trans>
             in:Calculated mark
