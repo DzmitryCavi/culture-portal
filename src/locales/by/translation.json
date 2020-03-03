@@ -1,8 +1,9 @@
 {
   "Lutsenko": {
-    "name": "Барыс Іванавіч Луцэнка",
+    "name": "Барыс Іванавіч Луцэнка",    
     "date": "16 верасня 1937 - 5 лютага 2020",
     "description": "Беларускі тэатральны рэжысёр, народны артыст Беларусі (1995)",
+    "map": [44.608, 40.106],
     "img": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Alexey_Kuzmich_Portrait_of_national_actor_Boris_Lutsenko_2001.JPG/270px-Alexey_Kuzmich_Portrait_of_national_actor_Boris_Lutsenko_2001.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Boris_Lutsenko_22.10.2014_National_Library_of_Belarus.jpg/800px-Boris_Lutsenko_22.10.2014_National_Library_of_Belarus.jpg",
@@ -105,6 +106,7 @@
     "name": "Ігнат Цярэнцьевіч Буйніцкі",
     "date": "10 жніўня 1861 - 9 верасня 1917",
     "description": "Беларускі акцёр, рэжысёр, тэатральны дзеяч, стваральнік нацыянальнага прафесійнага тэатра, удзельнік літаратурнага жыцця",
+    "map": [55.14, 27.69],
     "img": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ihnat_Bujnicki.jpg/386px-Ihnat_Bujnicki.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/%D0%91%D1%83%D0%B9%D0%BD%D1%96%D1%86%D0%BA%D1%96_%D0%86%D0%B3%D0%BD%D0%B0%D1%82.jpg/402px-%D0%91%D1%83%D0%B9%D0%BD%D1%96%D1%86%D0%BA%D1%96_%D0%86%D0%B3%D0%BD%D0%B0%D1%82.jpg",
@@ -203,6 +205,7 @@
     "name": "Мікалай Мікалаевіч Пінігін",
     "date": "6 жніўня 1957",
     "description": "Беларускі рэжысёр, заслужаны дзеяч мастацтваў Рэспублікі Беларусь",
+    "map": [49.21, 37.25],
     "img": [
       "https://urok.shkola.of.by/mikalaj-mikalaevich-pinigin/20811_html_m62720a72.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/f/f0/Pinigin.JPG",
@@ -305,6 +308,7 @@
     "name": "Еўсцігней Афінагенавіч Міровіч",
     "date": "10 жніўня 1878 - 16 лютага 1952",
     "description": "Беларускі драматург і тэатральны рэжысёр. Адзін з заснавальнікаў беларускага тэатральнага мастацтва, беларускага тэатра ім. Янкі Купалы.",
+    "map": [59.94, 30.31],
     "img": [
       "https://upload.wikimedia.org/wikipedia/commons/0/0a/Mirovich_03.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwx2MbYgkhaG-RdlkaFsuShpeGzx5_sqYQFczir8nTEnIl2mV3&s",
@@ -396,6 +400,7 @@
     "name": "Вадзім Вячаслававіч Дапкюнас",
     "date": "20 снежня 1940",
     "description": "Беларускі тэатральны дзеяч і арганізатар тэатральнай справы.",
+    "map": [64.73, 177.51],
     "img": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Vadzim_Dapkiunas_%281%29.jpg/399px-Vadzim_Dapkiunas_%281%29.jpg"
     ],    
@@ -484,6 +489,7 @@
     "name": "Віталь Міхайлавіч Баркоўскі",
     "date": "1 студзеня 1947",
     "description": "Беларускі рэжысёр і акцёр. Заслужаны дзеяч мастацтва Рэспублікі Беларусь",
+    "map": [53.73, 27.69],  
     "img": [
       "https://kultura.admin-smolensk.ru/img/image/personalii/b/barkovskii/1354261990_barkovskij_v_zale.jpg",
       "https://smolnarod.ru/wp-content/uploads/2017/10/000110.jpg",
@@ -584,6 +590,7 @@
     "name": "Ларыса Пампееўна Александроўская",
     "date": "2 лютага 1904",
     "description": "Беларуская оперная спявачка (сапрана), тэатральны рэжысёр, рэжысёр і грамадскі дзеяч. Народная артыстка БCCР, Народная артыстка СССР",
+    "map": [53.90, 27.56],
     "img": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/%C5%81arysa_Aleksandro%C5%ADskaja._%D0%9B%D0%B0%D1%80%D1%8B%D1%81%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_%281937%29.jpg/274px-%C5%81arysa_Aleksandro%C5%ADskaja._%D0%9B%D0%B0%D1%80%D1%8B%D1%81%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_%281937%29.jpg",
       "https://lh6.googleusercontent.com/proxy/ibrBtap1pTqEiW4n7q_5FoZDB2h7t9LFuSH9pmbzbiB8SnpbfKsLmH_K1oecm8matMWzj7FrxHdOYJ17sOOyFNkrlylg_1AhjuqQV53Em4O9q8zuxul3qKdajn3rkCmD7LALCTomo6_NUNS-2BMaG_Gg0-bCWoBrHQrJ6OZg53wNmhsTBkFGIpq82MPjtr428OI0_5-PoOel5f88HOgzspTaWAKYeK7td_H9yv1zbfajJA",

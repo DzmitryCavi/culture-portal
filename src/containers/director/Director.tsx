@@ -8,70 +8,58 @@ import TimeLine from './TimeLine';
 import WorksTable from './WorksTable';
 import SliderFoto from './SliderFoto';
 
-import {
-  useParams
-} from "react-router-dom";
-
+import { useParams } from 'react-router-dom';
 
 function Director() {
-  let { directorName } = useParams();
-  const getKeyValue = (key: any ) => (obj: Record<string, any>) => obj[key];
+  const { directorName } = useParams();
+  const getKeyValue = (key: any) => (obj: Record<string, any>) => obj[key];
   return (
-      <Grid container spacing={3}>
-        <Grid item xs={8}>
+    <Grid container>
+      <Grid container justify="center" alignItems="center">
+        <Grid item>
+          <img
+            className="director-image"
+            src={getKeyValue(directorName)(Directors).img[0]}
+            alt={''}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
           <Typography variant="h4" align="center">
-            <Trans>
-              tr:{directorName}.name
-            </Trans>
+            <Trans>tr:{directorName}.name</Trans>
           </Typography>
-          <Trans>
-              tr:{directorName}.description
-          </Trans>
-          <Trans>
-              tr:{directorName}.date
-          </Trans>
-        </Grid>
-        <Grid item xs={4}>
-          <img className="director-image" src={getKeyValue(directorName)(Directors).img[0]} alt={''}/>
-        </Grid>
-        <Grid item xs={12}>
-          <Box>
-            {/* <Trans>
-              tr:{name}.timeLine.{k}.text
-            </Trans>
- */}
-            <TimeLine director={directorName} />
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box>  
-            <SliderFoto director={directorName} />
-          </Box>
-        </Grid>
-
-        <Grid item xs={12}>
-          <Box>
-            <WorksTable director={directorName} />
-          </Box>
-        </Grid>
-        {/* <Grid item xs={12}>
-          <Typography variant="body1" align="center">
-            Slider with Photo Gallery
+          <Typography variant="h6" align="center">
+            <Trans>tr:{directorName}.date</Trans>
           </Typography>
-        </Grid>
-         <Grid item xs={12}>
-           <Box>
-            <Typography variant="body1" align="center">
-              Youtube video
-            </Typography>
-           </Box>
-        </Grid> */}
-        <Grid item xs={12}>
-          <Box className="map">
-            <YandexMap />
-          </Box>
+          <Typography variant="subtitle1" align="center">
+            <Trans>tr:{directorName}.description</Trans>
+          </Typography>
         </Grid>
       </Grid>
+      <Grid item xs={12} className="grid_item">
+        <Box>
+          <Typography variant="h4" align="center" className="biography">
+            <Trans>in:Biography</Trans>
+          </Typography>
+          <TimeLine director={directorName} />
+        </Box>
+      </Grid>
+      <Grid item xs={12}>
+        <Box>
+          <SliderFoto director={directorName} />
+        </Box>
+      </Grid>
+      <Grid item xs={12} className="grid_item">
+        <Box>
+          <WorksTable director={directorName} />
+        </Box>
+      </Grid>
+      <Grid item xs={12} className="grid_item">
+        <Typography variant="h4" align="center" >
+          <Trans>in:Map</Trans>
+        </Typography>
+        <YandexMap director={directorName} />
+      </Grid>
+    </Grid>
   );
 }
 
