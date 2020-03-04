@@ -34,7 +34,7 @@ export default function TimeLine({ director }) {
 
   const timeLine = timeLineList.map((time, index) => (
     <TimelineItem
-      key={time.date}
+      key={index}
       dateText={time.date}
       style={style.point}
       dateInnerStyle={style.dateInnerStyle}
