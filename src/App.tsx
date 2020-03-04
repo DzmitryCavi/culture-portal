@@ -17,7 +17,7 @@ import Team from './containers/team/Team';
 import { useTranslation } from 'react-i18next';
 
 function App() {
-  const { i18n } = useTranslation();
+  useTranslation();
   return (
     <div className="App">
       <Router>

@@ -11,13 +11,16 @@ import {
     Divider, 
     ListItem, 
     ListItemIcon, 
-    ListItemText,
     FormControl,
     NativeSelect
 
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import StyleIcon from '@material-ui/icons/Style';
+import RecentActorsIcon from '@material-ui/icons/RecentActors';
+import GroupIcon from '@material-ui/icons/Group';
+import TimelapseIcon from '@material-ui/icons/Timelapse';
 
 import { useTranslation , Trans } from 'react-i18next';
 
@@ -95,6 +98,13 @@ export default function Navigation() {
     changeLanguage(event.target.value as string);
   };
 
+  const pageNames = ["Home", "Authors", "Styleguide", "Team", "Worklog"];
+  const icons = [<AccountBalanceIcon color='primary'/>, 
+                 <RecentActorsIcon color='primary'/>, 
+                 <StyleIcon color='primary'/>, 
+                 <GroupIcon color='primary'/>, 
+                 <TimelapseIcon color='primary'/>];
+
   const sideList = () => (
     <div
       className={"list"}
@@ -103,13 +113,11 @@ export default function Navigation() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "Authors", "Styleguide","test", "Team", "Worklog"].map((text, index) => (
+        {pageNames.map((text, index) => (
           <ListItem button key={text}>       
             <Link to={`/${text}`}>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <Trans>{text}</Trans>
+              <ListItemIcon>{icons[index]}</ListItemIcon>
+              <Trans><Typography >{text}</Typography></Trans>
             </Link>
           </ListItem>
         ))}
