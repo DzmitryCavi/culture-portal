@@ -17,17 +17,25 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 400,
+        height: 600,
+        position: 'relative',
+        // display: 'flex',
+        // justifySelf: 'center',
       },
     media: {
-        height: 200,
-        'background-size':'contain'
+        height: 380,
+        'background-size':'cover'
     },
     modal: {
       margin: 'auto',
       width: '700px',
       height: '600px',
     },
+    buttons: {
+        position: 'absolute',
+        bottom: 0
+    }
 });
 
 interface PROPS {
@@ -58,7 +66,7 @@ function InfoCard(props: PROPS) {
                 title="Contemplative Reptile"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h6" component="h2">
                     <Trans>
                         tr:{director}.name
                     </Trans>
@@ -67,13 +75,15 @@ function InfoCard(props: PROPS) {
                     <Trans>
                         tr:{director}.date
                     </Trans>
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
                     <Trans>
                         tr:{director}.description
                     </Trans>
                 </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className = {classes.buttons}>
                 <Link to={`/director/${director}`}>
                     <Button size="small" color="primary">
                         <Trans>
