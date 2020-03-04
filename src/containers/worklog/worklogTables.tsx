@@ -4,13 +4,19 @@ export const worklogTables = [
     name: 'Dzmitry Malakhouski',
     performedWork: [
       {timeSpent: '5', performedWork: 'performedWork1'},
+      {timeSpent: '5', performedWork: 'performedWork2'},
+      {timeSpent: '5', performedWork: 'performedWork3'},
+      {timeSpent: '5', performedWork: 'performedWork4'},
+      {timeSpent: '5', performedWork: 'performedWork5'},
+      {timeSpent: '5', performedWork: 'performedWork6'}
     ]
   },
   {
     id: 1,
     name: 'Vasiliy Pisarenka',
     performedWork: [
-      {timeSpent: '5', performedWork: 'performedWork1'},
+      {timeSpent: '4', performedWork: 'performedWork1'},
+      {timeSpent: '3', performedWork: 'performedWork2'},
     ]
   },
   {
@@ -32,6 +38,8 @@ export const worklogTables = [
       {timeSpent: '7', performedWork: 'performedWork1'},
       {timeSpent: '3', performedWork: 'performedWork2'},
       {timeSpent: '4', performedWork: 'performedWork3'},
+      {timeSpent: '4', performedWork: 'performedWork4'},
+      {timeSpent: '3', performedWork: 'performedWork5'},
     ]
   },
   {

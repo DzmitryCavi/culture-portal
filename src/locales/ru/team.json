@@ -4,7 +4,12 @@
     "description":
       "Студент RS School. Фронтенд-разработчик.",
     "performedWork":{
-      "performedWork1": "выполненная работа 1"
+      "performedWork1": "Страница авторов и её перевод",
+      "performedWork2": "Навигация",
+      "performedWork3": "Сборка проекта",
+      "performedWork4": "Поисковые фильтры",
+      "performedWork5": "Роутинг",
+      "performedWork6": "Решал merge конфликты"
     }
     },
   "1":{
@@ -12,7 +17,8 @@
     "description":
         "Студент RS School. Фронтенд-разработчик.",
     "performedWork":{
-      "performedWork1": "выполненная работа 1"
+      "performedWork1": "Добавил домашнюю страницу",
+      "performedWork2": "Добавил страницу styleguide"
     }
     },
   "2":{
@@ -36,7 +42,9 @@
     "performedWork":{
       "performedWork1": "Добавил страницу журнала работ",
       "performedWork2": "Добавил яндекс карту для страницы директора",
-      "performedWork3": "Добавил перевод интерфейса журнала работ"
+      "performedWork3": "Добавил перевод интерфейса журнала работ",
+      "performedWork4": "Добавил список кнопок журнала работ команды и выпадающую таблицу",
+      "performedWork5": "Наполнил таблицы журналов работ и добавил им перевод"
     }
     },
   "4":{

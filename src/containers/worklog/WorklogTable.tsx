@@ -1,16 +1,9 @@
 import React from 'react';
 import { Typography, Box } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
 import { Trans }  from 'react-i18next';
 import { worklogTables } from './worklogTables';
 import { ButtonGroup, Button } from '@material-ui/core';
 import TableComponent from './Table'
-
-const useStyles = makeStyles({
-  buttons: {
-    maxWidth: 500,
-  }
-});
 
 class WorklogTable extends React.Component {
   state = {
@@ -39,7 +32,7 @@ class WorklogTable extends React.Component {
           <Box className='button_group_parent'>
             <ButtonGroup className='button_group' variant='contained' color="primary" aria-label='contained primary button group'>
               {worklogTables.map(table => (
-                <Button key={table.id.toString()} onClick={this.handleClick} value={table.id}><Trans>te:{table.id.toString()}.name</Trans></Button>
+                <Button className='button' key={table.id.toString()} onClick={this.handleClick} value={table.id}><Trans>te:{table.id.toString()}.name</Trans></Button>
               ))}
             </ButtonGroup>
           </Box>
