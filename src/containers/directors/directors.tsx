@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     search: {
       width: '100%',
-      color: 'azure !important'
+      'background-color': '#444',
+      'border-radius': 5
     },
     card: {
       display: 'flex',

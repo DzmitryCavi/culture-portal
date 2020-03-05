@@ -11,6 +11,7 @@ import {
     Modal,
     Fade,
  } from '@material-ui/core'
+ import YouTubeIcon from '@material-ui/icons/YouTube';
  import { Trans } from 'react-i18next';
 import Directors from '../../locales/en/translation.json';
 import { Link } from "react-router-dom";
@@ -20,6 +21,8 @@ const useStyles = makeStyles({
         maxWidth: 400,
         height: 600,
         position: 'relative',
+        color: 'white',
+        'background':'#444'
         // display: 'flex',
         // justifySelf: 'center',
       },
@@ -33,8 +36,16 @@ const useStyles = makeStyles({
       height: '600px',
     },
     buttons: {
+        width: '-moz-available',
         position: 'absolute',
         bottom: 0
+    },
+    link: {
+        color: 'white',
+        'text-decoration': 'none'
+    },
+    cardName: {
+        color: '#f2ed83'
     }
 });
 
@@ -59,39 +70,36 @@ function InfoCard(props: PROPS) {
 
   return (
         <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                className={classes.media}
-                image={getKeyValue(director)(Directors).img[0]}
-                title="Contemplative Reptile"
-                />
-                <CardContent>
-                <Typography gutterBottom variant="h6" component="h2">
-                    <Trans>
-                        tr:{director}.name
-                    </Trans>
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    <Trans>
-                        tr:{director}.date
-                    </Trans>
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    <Trans>
-                        tr:{director}.description
-                    </Trans>
-                </Typography>
-                </CardContent>
-            </CardActionArea>
+            <Link to={`/director/${director}`} className={classes.link}>
+                <CardActionArea>
+                    <CardMedia
+                    className={classes.media}
+                    image={getKeyValue(director)(Directors).img[0]}
+                    title="Contemplative Reptile"
+                    />
+                    <CardContent>
+                        <Typography  gutterBottom variant="h6" component="h2" className={classes.cardName}>
+                            <Trans>
+                                tr:{director}.name
+                            </Trans>
+                        </Typography>
+                        <Typography variant="body2" color="inherit" component="p">
+                            <Trans>
+                                tr:{director}.date
+                            </Trans>
+                        </Typography>
+                        <Typography variant="body2" color="inherit" component="p">
+                            <Trans>
+                                tr:{director}.description
+                            </Trans>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Link>
             <CardActions className = {classes.buttons}>
-                <Link to={`/director/${director}`}>
-                    <Button size="small" color="primary">
-                        <Trans>
-                            in:LEARN MORE
-                        </Trans>
-                    </Button>
-                </Link>
-                <Button variant="contained" color="secondary" onClick={handleOpen}>Watch the video</Button>
+                <Button startIcon={<YouTubeIcon />} variant="contained" fullWidth={true} color="secondary" onClick={handleOpen}><Trans>
+                                in:Watch the video
+                            </Trans></Button>
             </CardActions>
 
              <Modal

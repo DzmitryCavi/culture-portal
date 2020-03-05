@@ -8,7 +8,7 @@ import SelfEvaluation from './SelfEvaluation'
 
 export default function Worklog() {
   return (
-    <Box mx={3}>
+    <Box className='worklog-container' mx={3}>
       <WorklogTable />
       <Difficulties />
       <SelfEvaluation />

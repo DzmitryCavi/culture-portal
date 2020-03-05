@@ -10,7 +10,8 @@ import {
     List, 
     Divider, 
     ListItem, 
-    ListItemIcon, 
+    ListItemIcon,
+    Button, 
     FormControl,
     NativeSelect
 
@@ -23,6 +24,7 @@ import GroupIcon from '@material-ui/icons/Group';
 import TimelapseIcon from '@material-ui/icons/Timelapse';
 
 import { useTranslation , Trans } from 'react-i18next';
+import { useHistory } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -35,6 +37,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       flexGrow: 1
+    },
+    link: {
+      'text-decoration':'none',
     },
     input: {
       borderRadius: 4,
@@ -69,6 +74,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Navigation() {
   const classes = useStyles();
+  const hystory = useHistory();
+  console.log(hystory.location.pathname.substr(1));
   
   const { i18n } = useTranslation();
   const changeLanguage = (lng: string): void => {
@@ -116,8 +123,7 @@ export default function Navigation() {
         {pageNames.map((text, index) => (
           <ListItem button key={text}>       
             <Link to={`/${text}`}>
-              <ListItemIcon>{icons[index]}</ListItemIcon>
-              <Trans><Typography >{text}</Typography></Trans>
+              <Button startIcon={icons[index]} fullWidth={true} color="primary"><Trans>{text}</Trans></Button>   
             </Link>
           </ListItem>
         ))}
@@ -140,7 +146,7 @@ export default function Navigation() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Home
+          <Trans>{pageNames.indexOf(hystory.location.pathname.substr(1)) !== -1 ? hystory.location.pathname.substr(1) : ' '}</Trans>
           </Typography>
           <FormControl className={classes.input}>
             <NativeSelect
