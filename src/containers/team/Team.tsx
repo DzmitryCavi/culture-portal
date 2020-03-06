@@ -1,7 +1,5 @@
 import React from 'react';
-import './Team.sass';
-
-import { Grid } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import { teamData } from './teamDate';
 import Card from './Card';
 
@@ -30,11 +28,11 @@ function Team() {
   ));
 
   return (
-    <div className="wrapper">
-      <Grid container item xs={12} spacing={2} justify="center">
+    <Container maxWidth="lg">
+      <Grid container justify="center" spacing={2}>
         {team}
       </Grid>
-    </div>
+    </Container>
   );
 }
 
