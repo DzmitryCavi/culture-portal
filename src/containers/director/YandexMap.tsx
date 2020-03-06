@@ -25,7 +25,7 @@ export default function YandexMap(props: any) {
     zoom: 11,
   };
   console.log(mapData);
-  
+
   return (
     <YMaps>
       <Map defaultState={mapData} className={classes.map}>

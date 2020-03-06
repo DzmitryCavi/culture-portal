@@ -54,7 +54,7 @@ function Director() {
         </Box>
       </Grid>
       <Grid item xs={12} className="grid_item">
-        <Typography variant="h4" align="center" >
+        <Typography variant="h4" align="center">
           <Trans>in:Map</Trans>
         </Typography>
         <YandexMap director={directorName} />

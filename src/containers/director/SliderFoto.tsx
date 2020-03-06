@@ -16,7 +16,7 @@ export default function SliderFoto(props: any) {
   const urlFotoList = dataDirector[director].img;
 
   const fotoList = urlFotoList.map((urlFoto: string, index: number) => (
-    <img key={`${director}work${index}`} src={urlFoto}></img>
+    <img key={`${director}work${index}`} src={urlFoto} alt={director}></img>
   ));
 
   const settings = {
